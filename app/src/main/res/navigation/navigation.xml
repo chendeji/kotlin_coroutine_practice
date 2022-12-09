@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment2">
+    <fragment
+        android:id="@+id/homeFragment2"
+        android:name="com.josephchen.kotlincoroutinepracticeproject.fragment.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment2_to_downloadFragment2"
+            app:destination="@id/downloadFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_roomFragment"
+            app:destination="@id/roomFragment" />
+        <action
+            android:id="@+id/action_homeFragment2_to_retrofitFragment"
+            app:destination="@id/retrofitFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/downloadFragment"
+        android:name="com.josephchen.kotlincoroutinepracticeproject.fragment.DownloadFragment"
+        android:label="fragment_download"
+        tools:layout="@layout/fragment_download" />
+    <fragment
+        android:id="@+id/roomFragment"
+        android:name="com.josephchen.kotlincoroutinepracticeproject.fragment.RoomFragment"
+        android:label="fragment_room"
+        tools:layout="@layout/fragment_room" />
+    <fragment
+        android:id="@+id/retrofitFragment"
+        android:name="com.josephchen.kotlincoroutinepracticeproject.fragment.RetrofitFragment"
+        android:label="fragment_retrofit"
+        tools:layout="@layout/fragment_retrofit" />
+</navigation>
